@@ -1,3 +1,4 @@
+import HomePollCommentSection from "@/components/homePollCommentSection/HomePollCommentSection";
 import HomePollContainer from "@/components/homePollContainer/HomePollContainer";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       </div>
 
       <HomePollContainer />
+      <HomePollCommentSection />
     </main>
   )
 }

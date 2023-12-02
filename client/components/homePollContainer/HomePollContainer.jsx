@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react";
 import { FcRatings } from "react-icons/fc";
+import { toast } from 'react-toastify';
 
 const HomePollContainer = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +28,7 @@ const HomePollContainer = () => {
         try {
             console.log(_id)
             const poll = polls.find((p) => p._id === _id);
+            toast.success("your vote is received")
             setSubmittedPoll(poll);
         } catch (err) {
             console.log(err);
