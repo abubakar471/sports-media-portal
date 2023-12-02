@@ -11,7 +11,7 @@ const HomePollContainer = () => {
     const [polls, setPolls] = useState([
         {
             _id: "6k4y54ggs2gkDfmfn025n1%42",
-            title: "Cristian Ronaldo",
+            title: "Cristiano Ronaldo",
             ratings: 60
         },
 
